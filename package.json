@@ -17,13 +17,16 @@
     "redux-logger": "^3.0.6",
     "redux-thunk": "^2.3.0",
     "rodal": "^1.6.3",
+    "serve": "^10.1.2",
     "underscore": "^1.9.1"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "dev": "react-scripts start",
+    "start": "serve -s build",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "heroku-postbuild": "npm run build"
   },
   "eslintConfig": {
     "extends": "react-app"
