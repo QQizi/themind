@@ -1,0 +1,247 @@
+/* fallback */
+@font-face {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/materialicons/v43/flUhRq6tzZclQEJ-Vdg-IuiaDsNcIhQ8tQ.woff2) format('woff2');
+}
+
+body{
+    background-color: #393939;
+}
+
+#root-div{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    -moz-font-feature-settings: 'liga';
+    -moz-osx-font-smoothing: grayscale;
+}
+
+nav i, nav [class^="mdi-"], nav [class*="mdi-"], nav i.material-icons{
+    height: auto!important;
+    line-height: normal!important;
+}
+
+.btn, .btn-large, .btn-small{
+    display: flex!important;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+}
+
+nav .brand-logo{
+    position: relative!important;
+}
+
+.nav-wrapper{
+    display:flex!important;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.material-icons{
+    display:flex!important;
+    justify-content: center;
+    align-items: center;
+}
+
+.rodal .container{
+    display:flex!important;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.rodal .rodal-dialog{
+    display:flex!important;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/*ROOM*/
+.stats{
+    position: absolute;
+    top: 10px;
+    left:10px;
+    border: 1px solid grey;
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+}
+
+.stats ul{
+    margin: 0;
+}
+
+.stats ul li{
+    display: flex;
+    flex-direction: row;
+}
+
+.stats ul li p{
+    margin: 0;
+    color: #FF5A09;
+}
+.players{
+    position: absolute;
+    bottom: 10px;
+    left:10px;
+    border: 1px solid grey;
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+}
+
+.players ul{
+    margin: 0;
+}
+
+.players ul li{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: #FF5A09;
+}
+
+.players ul li div:first-child{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex: 1;
+    margin-right: 15px;
+}
+
+.players ul li p{
+    margin: 0;
+}
+
+.players ul li span{
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+.players ul li span.online{
+    background-color: greenyellow;
+}
+
+.players ul li span.offline{
+    background-color: red;
+}
+
+.myHand{
+    position: absolute;
+    bottom: 25px;
+    left:50%;
+    transform: translateX(-50%);
+    padding: 10px;
+}
+
+.playing-card{
+    width: 100px;
+    height: 150px;
+    border: 1px solid grey;
+    border-radius: 10px;
+    background-color: white;
+    position: absolute;
+    bottom: 0;
+    transform: translateX(-50%);
+    transform-origin: center bottom;
+    box-shadow: 2px 4px rgba(0,0,0,.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.playing-card:last-child{
+    cursor: pointer;
+}
+
+.playing-card span{
+    font-size: 40px;
+    cursor: default;
+}
+
+.playing-card span:first-child{
+    font-size: 11px;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+
+.playedCards{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translateX(-50%) translateY(-50%);
+    border: 1px solid #FF5A09;
+    width: 100px;
+    height: 150px;
+    padding: 20px;
+    box-sizing: content-box;
+}
+
+.playedCards .playing-card{
+    position: relative!important;
+    transform: translateX(0);
+}
+
+.displayLevel{
+    position: absolute;
+    top:10px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 30px;
+    color: #FF5A09;
+}
+
+.history{
+    position: absolute;
+    right: 10px;
+    top:50%;
+    max-height: 80%;
+    overflow: auto;
+    transform: translateY(-50%);
+}
+
+.history ul{
+
+}
+
+.history ul li{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    color: #FF5A09;
+    line-height: 25px;
+}
+
+.dropArea{
+    position: absolute!important;
+    top:50%;
+    left:50%;
+    min-width: 100px;
+    min-height: 100px;
+    border: 1px solid grey;
+    transform: translateX(-50%) translateY(-50%);
+}
