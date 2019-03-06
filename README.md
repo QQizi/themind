@@ -1,5 +1,7 @@
 This project is based on the boardgame ["The Mind"](https://boardgamegeek.com/boardgame/244992/mind).
 
+Demo can be found [here](https://themind-app.herokuapp.com/).
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
